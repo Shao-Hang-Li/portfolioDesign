@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio website">
+    <meta name="author" content="Shao Hang Li">
+    <meta name="keywords" content="HTML, CSS, JavaScript, metadata, personal portfolio, Shao Hang Li" >
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>Shao Hang Li's Portfolio</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="personalHeader">
+        <h1>Shao Hang Li / Full Stack Developer</h1>
+
+    <!-- navigation section inside header since it's a part of the header (side by side) -->
+    <nav id="top-nav">
+        <ul>
+            <li>
+                <a href="aboutMe.html">About Me</a>
+            </li>
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+            <li>
+                <a href="blogs.html">Blog</a>
+            </li>
+            <li>
+                <a href="contactForm.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- main section -->
+    <main class="allMain">
+        <!-- Blog section -->
+        <section id="blogs">
+            <h2>Blog</h2>
+            <p id="blogIntro">This is my blog post page where I share all kinds of tips, lifestyle content, stories and different insights that I learned in my journey to become a full stack developer.</p>
+            <div id="blogsFilter">
+                <!-- Filter Form -->
+                <form>
+                    <label for="blogType">Blogs types:</label>
+                    <select id="blogType" name="blogType">
+                        <option value="all">All Blogs</option>
+                        <option value="lifestyle">Lifestyle</option>
+                        <option value="techTips">Tech Tips</option>
+                        <option value="other">Other</option>
+                    </select>
+                </form>
+            </div>
+            <!-- Blog Content -->
+            <div class = "blog-wrapper">
+                <article class="blogContent">
+                        <h3>Day in a life of a software engineer</h3>
+                        <iframe width="400" height="300" title="Day in a life of a software engineer" src="Videos/ADayInTheLifeOfASoftwareEngineerAtMetaFacebook.mp4"></iframe>
+                        <p>This is a video about my day in a life of a software engineer. From what I do every day to what I learn every day. Enjoy!</p>
+                </article>
+                <article class="blogContent">
+                        <h2>7 tips for debugging HTML</h2>
+                        <img src="Images/htmlTips.jpg" alt="7 tips for debugging HTML" width="400" height="300">
+                        <p>Learn how to debug HTML using these 7 tips. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quia perspiciatis est possimus dolor 
+                            obcaecati, itaque, ipsam ipsum, modi sunt rerum dolorum laborum reprehenderit labore aut iste suscipit quos et?</p>
+                        <div class="button-wrapper">
+                            <a href="htmlTips.html" class="btn">Read More</a>
+                        </div>                    
+                </article>
+                <article class="blogContent">
+                        <h2>11 Must Know Java Tips</h2>
+                        <img src="Images/javaTips.png" alt="Java Tips" width="400" height="300">
+                        <p>Learn how to debug Java using these 7 tips. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error quia perspiciatis est possimus dolor 
+                            obcaecati, itaque, ipsam ipsum, modi sunt rerum dolorum laborum reprehenderit labore aut iste suscipit quos et?</p>
+                        <div class="button-wrapper">
+                            <a href="javaTips.html" class="btn">Read More</a>
+                        </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <!-- footer section -->
+    <footer class="footer-end">
+        <p>Telephone: 438-488-1118</p>
+        <p>Email: shaohangok@hotmail.com</p>
+        <p>Copyright &copy; 2025 Shao Hang Li. All Rights Reserved.</p>
+        <p> 
+            Follow me on <a href="https://x.com/">X</a> , 
+            <a href="https://www.facebook.com/">Facebook</a> , 
+            and <a href="https://github.com/Shao-Hang-Li?tab=repositories">Github</a>.
+        </p>
+    </footer>    
